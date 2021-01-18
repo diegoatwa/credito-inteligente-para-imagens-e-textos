@@ -1,7 +1,7 @@
 # Crédito inteligente para imagens e textos
 
 #### Esse aplicativo foi o responsável por nascer um dev em mim, quando escrevi a primeira linha deste código a minha bagagem com programação era zero, minha sintaxe deixa claro que sou novato e tudo bem! Posso ter usado o caminho mais longo mas consegui chegar ao destino e cumprir o propósito do aplicativo 😃
-Confira como foi escrever essa aplicação do zero e o que me motivou no artigo: [Como nasceu um dev em mim?]()
+Confira como foi escrever essa aplicação do zero e o que me motivou no artigo: [Como nasceu um dev em mim?](https://www.linkedin.com/pulse/como-nasceu-um-dev-em-mim-diego-azevedo/)
 <br>
 <br>
 ## O que?
