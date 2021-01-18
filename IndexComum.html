@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <style>
+        body {
+            font-family: "raleway"
+        }
+
+        .botoesPredefinidos {
+            margin-top: 3%;
+        }
+
+        .blue {
+            width: 45%;
+            font-size: 12px;
+        }
+
+        h2 {
+            margin-top: 4%;
+            margin-bottom: 2%;
+            padding: 5%;
+        }
+
+        input {
+            min-width: 95%;
+            align-items: center;
+        }
+
+        h5 {
+            margin: 0;
+        }
+
+        .creditoPersonalizadoBotao {
+            margin-top: 2%;
+        }
+
+        .green {
+            font-size: 12px;
+            min-width: 95%;
+        }
+
+        .spaceee {
+
+            margin-top: 10%;
+        }
+
+        .entrada {
+
+            margin-top: 5%;
+        }
+
+        h3 {
+
+            margin: 0%;
+            margin-top: 6%;
+            margin-bottom: 2%;
+        }
+
+        .entrada2 {
+
+            margin-top: 2%;
+        }
+
+        .creditoPersonalizadoBotao2 {
+            margin-top: 5%;
+        }
+
+        .blocoPar {
+            background-color: blue;
+        }
+
+        .botaoComImagem {
+            margin-left: 2.5%;
+            width: 45%;
+            cursor: pointer;
+        }
+
+        #Pixabay-button,
+        #Giphy-button,
+        #PxHere-button {
+            margin-left: 4%;
+        }
+
+        .linha2 {
+            position: relative;
+            width: 95%;
+        }
+
+        #entradaPredefinidaURL {
+            margin-bottom: 2%;
+        }
+
+        #entradaPredefinidaNomeUsuario,
+        #entradaPredefinidaURL,
+        #entradaInserirCreditoPersonalizado,
+        #entradaInserirCreditoPersonalizadoURL,
+        #entradaFonteTitulo,
+        #entradaFonteURL,
+        #entradaAssinarURL {
+            margin-left: 2.5%;
+            border-radius: 6px;
+        }
+
+        #entradaPredefinidaNomeUsuario:hover,
+        #entradaPredefinidaURL:hover,
+        #entradaInserirCreditoPersonalizado:hover,
+        #entradaInserirCreditoPersonalizadoURL:hover,
+        #entradaFonteTitulo:hover,
+        #entradaFonteURL:hover,
+        #entradaAssinarURL:hover {}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin-left: 2.5%;
+        }
+
+        button {
+            border-radius: 8px;
+            margin-left: 2.5%;
+        }
+
+        .blocoPredefinidos {
+            margin-top: 4%;
+            padding-top: 1%;
+            padding-bottom: 6%;
+            margin-left: 3%;
+            margin-right: 3%;
+            border-radius: 10px;
+            visibility: visible;
+            background-color: #DCDCDC;
+            cursor: grabbing;
+        }
+
+        #blocoPredefinidos1 {
+            z-index: 1;
+        }
+
+        #blocoPredefinidos2 {
+            z-index: 2;
+        }
+
+        #blocoPredefinidos3 {
+            z-index: 3;
+        }
+
+        #blocoPredefinidos4 {
+            z-index: 4;
+        }
+
+        #blocoPredefinidos5 {
+            z-index: 5;
+        }
+
+        #Freepik-button:hover,
+        #Pixabay-button:hover,
+        #Giphy-button:hover,
+        #PxHere-button:hover,
+        #Unsplash-button:hover,
+        #Pexels-button:hover {
+            background-color: #ffffff;
+            border-radius: 6px;
+        }
+
+
+        .botaoComImagemAuto {
+            margin-left: 2.5%;
+            width: 28.4%;
+            cursor: pointer;
+        }
+
+        .botaoComImagemAutoFree {
+            margin-left: 2.5%;
+            width: 28.4%;
+            cursor: pointer;
+        }
+
+        .listaFonte {
+            margin-left: 2.5%;
+            width: 95%;
+            margin-bottom: 3%;
+            margin-top: 3%;
+        }
+
+        #blocoPredefinidosfonte {
+            margin-bottom: 5%;
+        }
+
+        #inserirCreditoInteligente-button {
+            margin-top: 2%;
+            min-width: 95%;
+        }
+
+        #entradaInteligente {
+            margin-left: 2.5%;
+            border-radius: 6px;
+        }
+    </style>
+    <base target="_top">
+</head>
+
+<body>
+    <div class="blocoPredefinidos" id="blocoPredefinidos1">
+        <h3>Crédito inteligente 💡</h3>
+        <hr class="linha2">
+        <h5>URL:</h5>
+        <input onClick="this.setSelectionRange(0, this.value.length)" type="text" autocomplete="off"
+            id="entradaInteligente" tabindex="0" aria-describedby="activity-note-description" />
+
+        <div class="botaoCreditoInteligente">
+            <button class="blue" id="inserirCreditoInteligente-button" tabindex="1"
+                aria-describedby="ok-button-description">Inserir
+                crédito</button>
+        </div>
+    </div>
+    <div class="blocoPredefinidos" id="blocoPredefinidos3">
+        <div class="entrada">
+            <h3>Fonte</h3>
+            <hr class="linha2">
+            <h5>Título da matéria: </h5>
+            <input onClick="this.setSelectionRange(0, this.value.length)" autocomplete="off" type="text"
+                id="entradaFonteTitulo" tabindex="0" aria-describedby="activity-note-description" />
+        </div>
+        <div class="entrada2">
+            <h5>URL encurtada:</h5>
+            <input onClick="this.setSelectionRange(0, this.value.length)" type="text" autocomplete="off"
+                id="entradaFonteURL" tabindex="0" aria-describedby="activity-note-description" />
+        </div>
+        <div class="creditoPersonalizadoBotao">
+            <button class="green" id="inserirFonte-button" tabindex="1" aria-describedby="ok-button-description">Inserir
+                fonte</button>
+        </div>
+    </div>
+    <div class="blocoPredefinidos" id="blocoPredefinidos1">
+        <h3>Crédito predefinido</h3>
+        <hr class="linha2">
+        <h5>Nome do usuário:</h5>
+        <input onClick="this.setSelectionRange(0, this.value.length)" autocomplete="off" class="inputuser" type="text"
+            id="entradaPredefinidaNomeUsuario" tabindex="0" aria-describedby="activity-note-description" />
+        <div class="entrada2">
+            <h5>URL:</h5>
+            <input onClick="this.setSelectionRange(0, this.value.length)" type="text" autocomplete="off"
+                id="entradaPredefinidaURL" tabindex="0" aria-describedby="activity-note-description" />
+        </div>
+
+        <div class="botoesPredefinidos">
+            <button class="blue" id="Freepik-button" tabindex="1"
+                aria-describedby="ok-button-description">Freepik</button>
+            <button class="blue" id="Pixabay-button" tabindex="1"
+                aria-describedby="ok-button-description">Pixabay</button>
+        </div>
+        <div class="botoesPredefinidos">
+            <button class="blue" id="Pexels-button" tabindex="1"
+                aria-describedby="ok-button-description">Pexels</button>
+            <button class="blue" id="PxHere-button" tabindex="1"
+                aria-describedby="ok-button-description">PxHere</button>
+        </div>
+
+        <div class="botoesPredefinidos">
+            <button class="blue" id="Unsplash-button" tabindex="1"
+                aria-describedby="ok-button-description">Unsplash</button>
+            <button class="blue" id="Giphy-button" tabindex="1" aria-describedby="ok-button-description">Giphy</button>
+        </div>
+
+    </div>
+    </div>
+    <div class="blocoPredefinidos" id="blocoPredefinidos2">
+        <h3>Crédito personalizado</h3>
+        <hr class="linha2">
+        <input type="text" autocomplete="off" id="entradaInserirCreditoPersonalizado" tabindex="0"
+            aria-describedby="activity-note-description" value="Imagem: SITE, @USERNAME" />
+        <div class="entrada2">
+            <h5>URL:</h5>
+            <input onClick="this.setSelectionRange(0, this.value.length)" type="text" autocomplete="off"
+                id="entradaInserirCreditoPersonalizadoURL" tabindex="0" aria-describedby="activity-note-description" />
+        </div>
+        <div class="creditoPersonalizadoBotao">
+            <button class="green" id="inserirCreditoPersonalizado-button" tabindex="1"
+                aria-describedby="ok-button-description">Inserir crédito personalizado</button>
+        </div>
+    </div>
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        $("#tchauSujeira-button").click(tchauSujeiraButton);
+    });
+
+    function tchauSujeiraButton() {
+        google.script.run.tchauTodaSujeira();
+    }
+    $(function () {
+        $("#verificarTitulo-button").click(verificarTituloButton);
+    });
+
+    function verificarTituloButton() {
+        google.script.run.verificacaoNomeProfessor();
+    }
+    $(function () {
+        $("#duploEnter-button").click(duploEnterButton);
+    });
+
+    function duploEnterButton() {
+        google.script.run.verificacaoDuploEnter();
+    }
+    $(function () {
+        $("#duploEspaco-button").click(duploEspacoButton);
+    });
+
+    function duploEspacoButton() {
+        google.script.run.verificacaoDuploEspaco();
+    }
+    $(function () {
+        $("#todasVerificacoes-button").click(todasVerificacoesButton);
+    });
+
+    function todasVerificacoesButton() {
+        google.script.run.tudoJuntoMatrix();
+    }
+
+    $(function () {
+        $("#inserirCreditoPersonalizado-button").click(inserirCreditoPersonalizadoButton);
+    });
+
+    function inserirCreditoPersonalizadoButton() {
+        var text = $("#entradaInserirCreditoPersonalizado").val();
+        var link = $("#entradaInserirCreditoPersonalizadoURL").val();
+        document.getElementById("entradaInserirCreditoPersonalizado").style.border = "0px";
+        document.getElementById("entradaInserirCreditoPersonalizadoURL").style.border = "0px";
+
+        if (text === 'Imagem: SITE, @USERNAME') {
+            document.getElementById("entradaInserirCreditoPersonalizado").style.border = "2px solid red";
+            $("#entradaInserirCreditoPersonalizado").val('😞 Altere o SITE e USERNAME');
+            setTimeout(function () {
+                document.getElementById("entradaInserirCreditoPersonalizado").style.border = "0px";
+                $("#entradaInserirCreditoPersonalizado").val("Imagem: SITE, @USERNAME");
+            }, 2000)
+        }
+        if (text.length < 3) {
+            document.getElementById("entradaInserirCreditoPersonalizado").style.border = "2px solid red";
+            $("#entradaInserirCreditoPersonalizado").val('😞 Muito curto');
+            setTimeout(function () {
+                document.getElementById("entradaInserirCreditoPersonalizado").style.border = "0px";
+                $("#entradaInserirCreditoPersonalizado").val("Imagem: SITE, @USERNAME");
+            }, 2000)
+        }
+        if (text === '😞 Altere o SITE e USERNAME') {
+            document.getElementById("entradaInserirCreditoPersonalizado").style.border = "2px solid red";
+            setTimeout(function () {
+                $("#entradaInserirCreditoPersonalizado").val("Imagem: SITE, @USERNAME");
+                document.getElementById("entradaInserirCreditoPersonalizado").style.border = "0px";
+            }, 2000)
+        }
+        if (text === '😞 Muito curto') {
+            document.getElementById("entradaInserirCreditoPersonalizado").style.border = "2px solid red";
+            $("#entradaInserirCreditoPersonalizado").val("Imagem: SITE, @USERNAME");
+            setTimeout(function () {
+                document.getElementById("entradaInserirCreditoPersonalizado").style.border = "0px";
+            }, 2000)
+        }
+        if (link === '😞 Link muito curto') {
+            document.getElementById("entradaInserirCreditoPersonalizadoURL").style.border = "2px solid red";
+            setTimeout(function () {
+                $("#entradaInserirCreditoPersonalizadoURL").val("");
+                document.getElementById("entradaInserirCreditoPersonalizadoURL").style.border = "0px";
+            }, 2000)
+        }
+        if (link.length < 9) {
+            $("#entradaInserirCreditoPersonalizadoURL").val('😞 Link muito curto');
+            document.getElementById("entradaInserirCreditoPersonalizadoURL").style.border = " 2px solid red";
+            setTimeout(function () {
+                $("#entradaInserirCreditoPersonalizadoURL").val('');
+                document.getElementById("entradaInserirCreditoPersonalizadoURL").style.border = " 0px";
+            }, 2000)
+        }
+
+        if (text != 'Imagem: SITE, @USERNAME' && link.length > 9 && link != '😞 Link muito curto' && text != '😞 Muito curto' && text != '😞 Altere o SITE e USERNAME' && text.length > 3) {
+            google.script.run.roboTextoPersonalizadoHTML(text, link);
+            setTimeout(function () {
+                $("#entradaInserirCreditoPersonalizadoURL").val("");
+                $("#entradaInserirCreditoPersonalizado").val("Imagem: SITE, @USERNAME");
+            }, 1000)
+        }
+    }
+
+    function verificadorFonte(title, link) {
+        document.getElementById("entradaFonteTitulo").style.border = "0px";
+        document.getElementById("entradaFonteURL").style.border = "0px";
+
+        if (title === '😞 Insira o título da matéria') {
+            document.getElementById("entradaFonteTitulo").style.border = "2px solid red"
+        } else if (link === '😞 Link muito curto' || link === '😞 Insira uma url encurtada') {
+            document.getElementById("entradaFonteURL").style.border = "2px solid red"
+        }
+
+        if (title != '😞 Insira o título da matéria' && link != '😞 Link muito curto' && link !=
+            '😞 Insira uma url encurtada') {
+
+            if (title.length > 2 && link.length > 7 && link.length < 30) {
+                return true
+            } else if (title.length < 2 && link.length < 7 && link.length < 30) {
+                document.getElementById("entradaFonteTitulo").style.border = "2px solid red";
+                document.getElementById("entradaFonteURL").style.border = "2px solid red";
+                $("#entradaFonteURL").val('😞 Link muito curto');
+                $("#entradaFonteTitulo").val('😞 Insira o título da matéria');
+                setTimeout(function () {
+                    document.getElementById("entradaFonteTitulo").style.border = "0px";
+                    document.getElementById("entradaFonteURL").style.border = "0px";
+                    $("#entradaFonteURL").val('');
+                    $("#entradaFonteTitulo").val('');
+                }, 2000)
+            } else if (title.length < 2 && link.length > 30) {
+                document.getElementById("entradaFonteTitulo").style.border = "2px solid red";
+                $("#entradaFonteTitulo").val('😞 Insira o título da matéria');
+                document.getElementById("entradaFonteURL").style.border = "2px solid red";
+                $("#entradaFonteURL").val('😞 Insira uma url encurtada');
+                setTimeout(function () {
+                    document.getElementById("entradaFonteTitulo").style.border = "0px";
+                    $("#entradaFonteTitulo").val('');
+                    document.getElementById("entradaFonteURL").style.border = "0px";
+                    $("#entradaFonteURL").val('');
+                }, 2000)
+            } else if (title.length < 2) {
+                document.getElementById("entradaFonteTitulo").style.border = "2px solid red";
+                $("#entradaFonteTitulo").val('😞 Insira o título da matéria');
+                setTimeout(function () {
+                    document.getElementById("entradaFonteTitulo").style.border = "0px";
+                    $("#entradaFonteTitulo").val('');
+                }, 2000)
+            } else if (link.length < 7) {
+                document.getElementById("entradaFonteURL").style.border = "2px solid red";
+                $("#entradaFonteURL").val('😞 Link muito curto');
+                setTimeout(function () {
+                    document.getElementById("entradaFonteURL").style.border = "0px";
+                    $("#entradaFonteURL").val('');
+                }, 2000)
+            } else if (link.length > 30) {
+                document.getElementById("entradaFonteURL").style.border = "2px solid red";
+                $("#entradaFonteURL").val('😞 Insira uma url encurtada');
+                setTimeout(function () {
+                    document.getElementById("entradaFonteURL").style.border = "0px";
+                    $("#entradaFonteURL").val('');
+                }, 2000)
+            } else {
+                return true
+            }
+        }
+    }
+
+    $(function () {
+        $("#inserirFonte-button").click(inserirFonteButton);
+    });
+
+    function inserirFonteButton() {
+        var title = $("#entradaFonteTitulo").val();
+        var link = $("#entradaFonteURL").val();
+        if (verificadorFonte(title, link)) {
+            document.getElementById("entradaFonteTitulo").style.border = "2px solid #83C12C";
+            document.getElementById("entradaFonteURL").style.border = "2px solid #83C12C";
+            google.script.run.fonte(title, link);
+            setTimeout(function () {
+                $("#entradaFonteTitulo").val("")
+                $("#entradaFonteURL").val("")
+                document.getElementById("entradaFonteTitulo").style.border = "0px";
+                document.getElementById("entradaFonteURL").style.border = "0px";
+            }, 1000)
+        }
+    }
+
+    $(function () {
+        $("#assinarImagem-button").click(assinarImagemButton);
+    });
+
+    function assinarImagemButton() {
+        document.getElementById("entradaAssinarURL").style.border = "0px"
+        var link = $("#entradaAssinarURL").val();
+        if (link.length < 7 || link === '😞 Insira a URL para assinar') {
+            document.getElementById("entradaAssinarURL").style.border = "2px solid red"
+            $("#entradaAssinarURL").val('😞 Insira a URL para assinar');
+            setTimeout(function () {
+                document.getElementById("entradaAssinarURL").style.border = "0px"
+                $("#entradaAssinarURL").val('');
+            }, 2000)
+        } else {
+            document.getElementById("entradaAssinarURL").style.border = "2px solid #83C12C"
+            google.script.run.roboAssinarImagem(link);
+            setTimeout(function () {
+                $("#entradaAssinarURL").val("")
+                document.getElementById("entradaAssinarURL").style.border = "0px"
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#assinarVideo-button").click(assinarVideoButton);
+    });
+
+    function assinarVideoButton() {
+        document.getElementById("entradaAssinarURL").style.border = "0px"
+        var link = $("#entradaAssinarURL").val();
+        if (link.length < 7 || link === '😞 Insira a URL para assinar') {
+            document.getElementById("entradaAssinarURL").style.border = "2px solid red"
+            $("#entradaAssinarURL").val('😞 Insira a URL para assinar');
+            setTimeout(function () {
+                document.getElementById("entradaAssinarURL").style.border = "0px"
+                $("#entradaAssinarURL").val('');
+            }, 2000)
+        } else {
+            document.getElementById("entradaAssinarURL").style.border = "2px solid #83C12C"
+            google.script.run.roboAssinarVideo(link);
+            setTimeout(function () {
+                $("#entradaAssinarURL").val("")
+                document.getElementById("entradaAssinarURL").style.border = "0px"
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#assinarLink-button").click(assinarLinkButton);
+    });
+
+    function assinarLinkButton() {
+        document.getElementById("entradaAssinarURL").style.border = "0px"
+        var link = $("#entradaAssinarURL").val();
+        if (link.length < 7 || link === '😞 Insira a URL para assinar') {
+            document.getElementById("entradaAssinarURL").style.border = "2px solid red"
+            $("#entradaAssinarURL").val('😞 Insira a URL para assinar');
+            setTimeout(function () {
+                document.getElementById("entradaAssinarURL").style.border = "0px"
+                $("#entradaAssinarURL").val('');
+            }, 2000)
+        } else {
+            document.getElementById("entradaAssinarURL").style.border = "2px solid #83C12C"
+            google.script.run.roboAssinarLink(link);
+            setTimeout(function () {
+                $("#entradaAssinarURL").val("")
+                document.getElementById("entradaAssinarURL").style.border = "0px"
+            }, 1000)
+        }
+    }
+
+    $(function () {
+        $("#inserirCreditoInteligente-button").click(decidirCreditoInteligente);
+    });
+
+    function decidirCreditoInteligente() {
+        document.getElementById("entradaInteligente").style.border = "0px"
+        var entradaInteligente = $("#entradaInteligente").val()
+
+        var eFreepik = entradaInteligente.indexOf('www.freepik.com/') != -1
+        var ePxhere = entradaInteligente.indexOf('pxhere.com/') != -1
+        var eUnsplash = entradaInteligente.indexOf('unsplash.com/photos/') != -1
+
+        if (eFreepik) {
+            FreepikAuto()
+        } else if (ePxhere) {
+            PxhereAuto()
+        } else if (eUnsplash) {
+            UnsplashAuto()
+        } else {
+            $("#entradaInteligente").val('Erro, use o Freepik, PxHere ou Unsplash.')
+            document.getElementById("entradaInteligente").style.border = "2px solid red"
+            setTimeout(function () {
+                $("#entradaInteligente").val('')
+                document.getElementById("entradaInteligente").style.border = "0px"
+            }, 2000)
+        }
+    }
+
+    function FreepikAuto() {
+        document.getElementById("entradaInteligente").style.border = "2px solid #83C12C"
+        var entradaPredefinidaNomeUsuario = ''
+        var entradaPredefinidaURL = $("#entradaInteligente").val();
+
+        google.script.run.Freepik(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+        setTimeout(function () {
+            $("#entradaInteligente").val('')
+            document.getElementById("entradaInteligente").style.border = "0px"
+        }, 1000)
+    }
+
+    function PxhereAuto() {
+        document.getElementById("entradaInteligente").style.border = "2px solid #83C12C"
+        var entradaPredefinidaNomeUsuario = ''
+        var entradaPredefinidaURL = $("#entradaInteligente").val();
+
+        google.script.run.PxHere(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+        setTimeout(function () {
+            $("#entradaInteligente").val('')
+            document.getElementById("entradaInteligente").style.border = "0px"
+        }, 1000)
+    }
+
+    function UnsplashAuto() {
+        document.getElementById("entradaInteligente").style.border = "2px solid #83C12C"
+        var entradaPredefinidaNomeUsuario = ''
+        var entradaPredefinidaURL = $("#entradaInteligente").val();
+
+        google.script.run.Unsplash(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+        setTimeout(function () {
+            $("#entradaInteligente").val('')
+            document.getElementById("entradaInteligente").style.border = "0px"
+        }, 1000)
+    }
+
+    $(function () {
+        $("#Freepik-button").click(FreepikButton);
+    });
+
+    function checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL) {
+
+        document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+        document.getElementById("entradaPredefinidaURL").style.border = "0px"
+
+        if (entradaPredefinidaNomeUsuario.length < 3 && entradaPredefinidaURL < 5) {
+
+            document.getElementById("entradaPredefinidaNomeUsuario").style.border = "2px solid red"
+            document.getElementById("entradaPredefinidaURL").style.border = "2px solid red"
+            $("#entradaPredefinidaNomeUsuario").val('😞 Insira o nome do usuário');
+            $("#entradaPredefinidaURL").val('😞 Insira a URL da imagem');
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaNomeUsuario").val('');
+                $("#entradaPredefinidaURL").val('');
+            }, 2000)
+
+            return false
+        } else if (entradaPredefinidaNomeUsuario.length < 3 || entradaPredefinidaNomeUsuario ===
+            '😞 Insira o nome do usuário') {
+            document.getElementById("entradaPredefinidaNomeUsuario").style.border = "2px solid red"
+            $("#entradaPredefinidaNomeUsuario").val('😞 Insira o nome do usuário');
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                $("#entradaPredefinidaNomeUsuario").val('');
+            }, 2000)
+            return false
+        } else if (entradaPredefinidaURL < 5 || entradaPredefinidaURL === '😞 Insira a URL da imagem') {
+            document.getElementById("entradaPredefinidaURL").style.border = "2px solid red"
+            $("#entradaPredefinidaURL").val('😞 Insira a URL da imagem');
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val('');
+            }, 2000)
+            return false
+        } else {
+            document.getElementById("entradaPredefinidaNomeUsuario").style.border = "2px solid #83C12C"
+            document.getElementById("entradaPredefinidaURL").style.border = "2px solid #83C12C"
+            return true
+        }
+    }
+
+    function FreepikButton() {
+        var entradaPredefinidaNomeUsuario = $("#entradaPredefinidaNomeUsuario").val();
+        var entradaPredefinidaURL = $("#entradaPredefinidaURL").val();
+
+        if (checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL)) {
+            google.script.run.Freepik(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val("")
+                $("#entradaPredefinidaNomeUsuario").val("")
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#Pixabay-button").click(PixabayButton);
+    });
+
+    function PixabayButton() {
+        var entradaPredefinidaNomeUsuario = $("#entradaPredefinidaNomeUsuario").val();
+        var entradaPredefinidaURL = $("#entradaPredefinidaURL").val();
+
+        if (checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL)) {
+            google.script.run.Pixabay(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val("")
+                $("#entradaPredefinidaNomeUsuario").val("")
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#Pexels-button").click(PexelsButton);
+    });
+
+    function PexelsButton() {
+        var entradaPredefinidaNomeUsuario = $("#entradaPredefinidaNomeUsuario").val();
+        var entradaPredefinidaURL = $("#entradaPredefinidaURL").val();
+
+        if (checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL)) {
+            google.script.run.Pexels(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val("")
+                $("#entradaPredefinidaNomeUsuario").val("")
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#PxHere-button").click(PxHereButton);
+    });
+
+    function PxHereButton() {
+        var entradaPredefinidaNomeUsuario = $("#entradaPredefinidaNomeUsuario").val();
+        var entradaPredefinidaURL = $("#entradaPredefinidaURL").val();
+
+        if (checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL)) {
+            google.script.run.PxHere(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val("")
+                $("#entradaPredefinidaNomeUsuario").val("")
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#Unsplash-button").click(UnsplashButton);
+    });
+
+    function UnsplashButton() {
+        var entradaPredefinidaNomeUsuario = $("#entradaPredefinidaNomeUsuario").val();
+        var entradaPredefinidaURL = $("#entradaPredefinidaURL").val();
+
+        if (checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL)) {
+            google.script.run.Unsplash(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val("")
+                $("#entradaPredefinidaNomeUsuario").val("")
+            }, 1000)
+        }
+    }
+    $(function () {
+        $("#Giphy-button ").click(GiphyButton);
+    });
+
+    function GiphyButton() {
+        var entradaPredefinidaNomeUsuario = $("#entradaPredefinidaNomeUsuario").val();
+        var entradaPredefinidaURL = $("#entradaPredefinidaURL").val();
+
+        if (checkTextPredefinido(entradaPredefinidaNomeUsuario, entradaPredefinidaURL)) {
+            google.script.run.Giphy(entradaPredefinidaNomeUsuario, entradaPredefinidaURL);
+            setTimeout(function () {
+                document.getElementById("entradaPredefinidaNomeUsuario").style.border = "0px"
+                document.getElementById("entradaPredefinidaURL").style.border = "0px"
+                $("#entradaPredefinidaURL").val("")
+                $("#entradaPredefinidaNomeUsuario").val("")
+            }, 1000)
+        }
+    }
+</script>
+
+</html>
